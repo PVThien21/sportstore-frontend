@@ -9,6 +9,7 @@ export const WrapperFooterProduct = styled.div`
     justify-Content: center;
     position: relative;
     bottom: 0;
+    top: 10px;
     padding-bottom: 100px;
 `
 
