@@ -55,7 +55,7 @@ const HomePage = () => {
                 </WrapperTypeProduct>
             </div>
             <div className='body' style={{ width: '100%', backgroundColor: '#efefef', }}>
-                <div id="container" style={{ height: '1050px', width: '1270px', margin: '0 auto' }}>
+                <div id="container" style={{ height: '100%', width: '1270px', margin: '5px auto' }}>
                     <SliderComponent arrImages={[slider1, slider2, slider3]} />
                     <WrapperProducts>
                         {products?.data?.map((product) => {
@@ -84,7 +84,7 @@ const HomePage = () => {
                             }}
                             disabled={products?.total === products?.data?.length || products?.totalPage === 1}
                             styleTextButton={{ fontWeight: 500, color: products?.total === products?.data?.length && '#fff' }}
-                            onClick={() => setLimit((prev) => prev + 12)}
+                            onClick={() => setLimit((prev) => prev + 6)}
                         />
                     </div>
                 </div>
